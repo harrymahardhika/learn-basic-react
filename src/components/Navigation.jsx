@@ -1,19 +1,11 @@
-import { useEffect } from 'react'
 import { Link } from 'react-router-dom'
 
 const Navigation = () => {
-  useEffect(() => {
-    console.log('Navigation component mounted')
-
-    return () => {
-      console.log('Navigation component unmounted')
-    }
-  }, [])
-
   const links = [
     { name: 'Home', path: '/' },
     { name: 'About', path: 'about' },
     { name: 'Contact', path: 'contact' },
+    { name: 'Books', path: 'books' },
   ]
 
   return (
