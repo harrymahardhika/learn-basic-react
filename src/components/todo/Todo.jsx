@@ -56,7 +56,7 @@ const Todo = () => {
           return selectedTodo
         }
         return todo
-      })
+      }),
     )
 
     setSelectedTodo(null)
@@ -109,7 +109,7 @@ const Todo = () => {
             </button>
 
             <div className="text-start grow p-1">
-              {selectedTodo && selectedTodo.id === todo.id ? (
+              {isEditing && selectedTodo && selectedTodo.id === todo.id ? (
                 <input
                   type="text"
                   value={selectedTodo.task}

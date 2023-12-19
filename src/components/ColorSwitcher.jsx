@@ -9,22 +9,13 @@ const ColorSwitcher = () => {
         This text changes color
       </p>
 
-      <button
-        className="mr-1 p-2 border rounded"
-        onClick={() => setColor('red')}
-      >
+      <button className="mr-1 p-2 border rounded" onClick={() => setColor('red')}>
         Red
       </button>
-      <button
-        className="mr-1 p-2 border rounded"
-        onClick={() => setColor('green')}
-      >
+      <button className="mr-1 p-2 border rounded" onClick={() => setColor('green')}>
         Green
       </button>
-      <button
-        className="mr-1 p-2 border rounded"
-        onClick={() => setColor('blue')}
-      >
+      <button className="mr-1 p-2 border rounded" onClick={() => setColor('blue')}>
         Blue
       </button>
     </div>

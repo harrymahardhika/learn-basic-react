@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react'
 
 const useDocumentTitle = (title) => {
   useEffect(() => {
-    document.title = title
+    document.title = `${title} | My App`
   }, [title])
 }
 

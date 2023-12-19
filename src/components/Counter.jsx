@@ -7,17 +7,11 @@ const Counter = () => {
     <div>
       <p>You clicked {count} times</p>
 
-      <button
-        className="border rounded bg-slate-50 p-2 mr-3"
-        onClick={() => setCount(count - 1)}
-      >
+      <button className="border rounded bg-slate-50 p-2 mr-3" onClick={() => setCount(count - 1)}>
         Decrement
       </button>
 
-      <button
-        className="border rounded bg-slate-50 p-2 mr-3"
-        onClick={() => setCount(count + 1)}
-      >
+      <button className="border rounded bg-slate-50 p-2 mr-3" onClick={() => setCount(count + 1)}>
         Increment
       </button>
     </div>

@@ -33,20 +33,12 @@ const FormB = () => {
   const handleSubmit = (e) => {
     e.preventDefault()
 
-    if (
-      formData.name === '' ||
-      formData.email === '' ||
-      formData.password === ''
-    ) {
+    if (formData.name === '' || formData.email === '' || formData.password === '') {
       alert('Please fill all fields')
       return
     }
 
-    if (
-      formData.name.length > 0 &&
-      formData.email.length > 0 &&
-      formData.password.length > 0
-    ) {
+    if (formData.name.length > 0 && formData.email.length > 0 && formData.password.length > 0) {
       console.log(formData)
     }
   }

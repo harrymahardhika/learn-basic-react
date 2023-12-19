@@ -9,12 +9,7 @@ const TextInput = () => {
 
   return (
     <div>
-      <input
-        type="text"
-        value={text}
-        onChange={(event) => setText(event.target.value)}
-        className="rounded"
-      />
+      <input type="text" value={text} onChange={(event) => setText(event.target.value)} className="rounded" />
 
       <button onClick={clear} className="ml-2 p-2 border rounded">
         Clear

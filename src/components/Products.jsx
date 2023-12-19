@@ -11,9 +11,7 @@ const ProductList = () => {
   return (
     <List
       items={products}
-      renderItem={(product) =>
-        `${product.name} ($${parseFloat(product.price).toFixed(2)})`
-      }
+      renderItem={(product) => `${product.name} ($${parseFloat(product.price).toFixed(2)})`}
     />
   )
 }

@@ -1,9 +1,9 @@
 import { Slide, ToastContainer } from 'react-toastify'
-import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import HomePage from './pages/HomePage'
 import AboutPage from './pages/AboutPage'
 import Navigation from './components/Navigation'
 import ContactPage from './pages/ContactPage'
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
 
 const App = () => {
   return (
