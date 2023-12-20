@@ -2,21 +2,24 @@ import { Outlet } from 'react-router-dom'
 import { Slide, ToastContainer } from 'react-toastify'
 import { AuthProvider } from './AuthContext'
 import Navigation from './components/Navigation'
+import { LocaleProvider } from './LocaleContext'
 
 const App = () => {
   return (
     <AuthProvider>
-      <Navigation />
+      <LocaleProvider>
+        <Navigation />
 
-      <Outlet />
+        <Outlet />
 
-      <ToastContainer
-        theme="colored"
-        hideProgressBar="true"
-        autoClose="3000"
-        draggable="false"
-        transition={Slide}
-      />
+        <ToastContainer
+          theme="colored"
+          hideProgressBar="true"
+          autoClose="3000"
+          draggable="false"
+          transition={Slide}
+        />
+      </LocaleProvider>
     </AuthProvider>
   )
 }

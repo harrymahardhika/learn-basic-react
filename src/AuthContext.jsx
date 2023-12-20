@@ -9,15 +9,22 @@ const AuthContext = createContext({
 const AuthProvider = ({ children }) => {
   const [user, setUser] = useState(null)
 
-  useEffect(() => {
-    setUser({ name: 'John Doe' })
-  }, [setUser])
+  // useEffect(() => {
+  //   setUser({ name: 'John Doe' })
+  // }, [])
 
-  return <AuthContext.Provider value={{ user, setUser }}>{children}</AuthContext.Provider>
+  const login = (user) => {
+    setUser(user)
+  }
+
+  const logout = () => {
+    setUser(null)
+  }
+
+  return <AuthContext.Provider value={{ user, login, logout }}>{children}</AuthContext.Provider>
 }
 
 AuthProvider.propTypes = {
-  children: PropTypes.node.isRequired,
+  children: PropTypes.node,
 }
-
 export { AuthContext, AuthProvider }
