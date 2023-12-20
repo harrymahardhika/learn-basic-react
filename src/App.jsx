@@ -1,10 +1,13 @@
+import { Outlet } from 'react-router-dom'
 import { Slide, ToastContainer } from 'react-toastify'
-import Router from './Router'
+import Navigation from './components/Navigation'
 
 const App = () => {
   return (
     <>
-      <Router />
+      <Navigation />
+
+      <Outlet />
 
       <ToastContainer
         theme="colored"

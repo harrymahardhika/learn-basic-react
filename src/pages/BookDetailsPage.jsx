@@ -3,7 +3,14 @@ import { Navigate, useParams } from 'react-router-dom'
 
 const BookDetailsPage = () => {
   const books = JSON.parse(localStorage.getItem('books'))
-  const { id } = useParams()
+  const { id, query, name } = useParams()
+  const queries = new URLSearchParams(window.location.search)
+
+  console.log(id, query, name)
+
+  console.log(queries.get('q'))
+  console.log(queries.get('source'))
+
   const book = books.find((book) => book.id === Number(id))
 
   if (!book) {

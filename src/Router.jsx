@@ -18,6 +18,8 @@ const Router = () => {
         <Route path="contact" element={<ContactPage />} />
         <Route path="books" element={<BooksPage />} />
         <Route path="books/:id" element={<BookDetailsPage />} />
+        <Route path="books/:id/:query/" element={<BookDetailsPage />} />
+        <Route path="books/:id/:query/:name" element={<BookDetailsPage />} />
         <Route path="404" element={<NotFound />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
